@@ -1,20 +1,24 @@
 <!-- Describe task in general -->
 <!-- <img src="{{MEDIA_CONVERT}}title.png" class="title_img" /> -->
 <p style="text-align: justify;">
-    Sum two passed ints
+    Binary search is an effective method that employs the divide and conquer strategy to quickly find an element in an ordered list, significantly reducing the search space by half at each step. This technique not only exemplifies algorithmic efficiency in solving search problems, but also highlights the importance of understanding fundamental computer science concepts, such as divide and conquer algorithms, which are crucial for optimizing and solving complex problems in a more intuitive way.
+</p>
+
+<p style="text-align: justify;">
+    The goal of this exercise is to implement binary search in such a way that it returns the index of the searched element in the list (or -1 if it is not present) and the number of steps performed, providing a clear view of the divide and conquer process in action. In the image below, you can find an illustration of the algorithm at work.
 </p>
 
 <p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    <img  title="example" src="{{MEDIA}}bin-search.svg" alt="example" style="max-height: 300px"/>
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input:</strong> Two arguments. Both are ints.
+    <strong>Input:</strong> Two arguments. <span translate="repeat">{% if is_js %}Array{% else %}List{% endif %}</span> of integers <span translate="no">({% if is_js %}number{% else %}integer{% endif %})</span> and an integer.
 </p>
 
 <p>
-    <strong>Output:</strong> Int. 
+    <strong>Output:</strong> {% if is_js %}Array{% else %}List{% endif %} of two {% if is_js %}numbers{% else %}integers{% endif %}.
 </p>
 
 
