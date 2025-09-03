@@ -1,0 +1,46 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p style="text-align: justify;">
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Binary_search">Binary search</a> est une méthode efficace qui utilise la stratégie "diviser pour régner" pour trouver rapidement un élément dans une liste ordonnée, en réduisant considérablement l'espace de recherche de moitié à chaque étape. Cette technique illustre non seulement l'efficacité algorithmique dans la résolution des problèmes de recherche, mais souligne également l'importance de comprendre les concepts informatiques fondamentaux, tels que les algorithmes de division et de conquête, qui sont essentiels pour optimiser et résoudre des problèmes complexes d'une manière plus intuitive.
+</p>
+
+<p style="text-align: justify;">
+    L'objectif de cet exercice est d'implémenter la recherche binaire de manière à ce qu'elle renvoie l'index de l'élément recherché dans la liste (ou -1 s'il n'est pas présent) et le nombre d'étapes effectuées, offrant ainsi une vue claire du processus de division et de conquête en action. L'image ci-dessous illustre le fonctionnement de l'algorithme. Si le nombre d'éléments de la liste est pair, l'élément de gauche est considéré comme l'élément du milieu.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}bin-search.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Deux arguments. {% if is_js %}Tableau{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> d'entiers <span>({% if is_js %}number{% else %}int{% endif %})</span> et un entier.
+</p>
+
+<p>
+   <strong>Résultat:</strong> {% if is_js %}Tableau{% else %}Liste{% endif %} de deux {% if is_js %}nombres{% else %}entiers{% endif %}.
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
