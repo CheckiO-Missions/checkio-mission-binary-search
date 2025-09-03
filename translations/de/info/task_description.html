@@ -1,0 +1,46 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p style="text-align: justify;">
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Binary_search">Binary search</a> ist eine effektive Methode, die die Divide-and-Conquer-Strategie einsetzt, um schnell ein Element in einer geordneten Liste zu finden, wobei der Suchraum bei jedem Schritt um die Hälfte reduziert wird. Diese Technik ist nicht nur ein Beispiel für die Effizienz von Algorithmen bei der Lösung von Suchproblemen, sondern zeigt auch, wie wichtig es ist, grundlegende Konzepte der Informatik zu verstehen, wie z.B. Divide-and-Conquer-Algorithmen, die für die Optimierung und Lösung komplexer Probleme auf intuitive Weise entscheidend sind.
+</p>
+
+<p style="text-align: justify;">
+    Ziel dieser Übung ist es, die binäre Suche so zu implementieren, dass sie den Index des gesuchten Elements in der Liste (oder -1, wenn es nicht vorhanden ist) und die Anzahl der durchgeführten Schritte zurückgibt und so einen klaren Blick auf den Divide-and-Conquer-Prozess in Aktion bietet. In der Abbildung unten sehen Sie eine Illustration des Algorithmus bei der Arbeit. Bei einer geraden Anzahl von Elementen in der Liste wird das linke Element als mittleres Element betrachtet.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}bin-search.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zwei Argumente. {% if is_js %}Array{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> von Ganzzahlen <span>({% if is_js %}number{% else %}int{% endif %})</span> und eine ganze Zahl.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> {% if is_js %}Array{% else %}Liste{% endif %} von zwei {% if is_js %}Zahlen{% else %}ganzen Zahlen{% endif %}.
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
