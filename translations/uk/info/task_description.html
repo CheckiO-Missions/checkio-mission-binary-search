@@ -1,0 +1,46 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p style="text-align: justify;">
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Binary_search">Binary search</a> це ефективний метод, який використовує стратегію "розділяй і володарюй" для швидкого пошуку елемента в упорядкованому списку, значно зменшуючи простір пошуку вдвічі на кожному кроці. Цей метод не лише демонструє алгоритмічну ефективність у вирішенні пошукових задач, але й підкреслює важливість розуміння фундаментальних концепцій комп'ютерних наук, таких як алгоритми "розділяй і володарюй", які мають вирішальне значення для оптимізації та вирішення складних завдань більш інтуїтивно зрозумілим способом.
+</p>
+
+<p style="text-align: justify;">
+    Мета цієї вправи - реалізувати бінарний пошук таким чином, щоб він повертав індекс шуканого елемента в списку (або -1, якщо його немає) і кількість виконаних кроків, надаючи чітке уявлення про процес "розділяй і володарюй" в дії. На зображенні нижче ви можете знайти ілюстрацію алгоритму в роботі. У випадку парної кількості елементів у списку, лівий елемент вважається середнім.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}bin-search.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Два аргументи. {% if is_js %}Масив{% else %}Список{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> цілих чисел <span>({% if is_js %}number{% else %}int{% endif %})</span> та цілого числа.
+</p>
+
+<p>
+   <strong>Виведіть результат:</strong> {% if is_js %}Масив{% else %}Список{% endif %} з двох {% if is_js %}чисел{% else %}цілих чисел{% endif %}.
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
