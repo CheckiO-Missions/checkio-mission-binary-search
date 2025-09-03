@@ -1,0 +1,46 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p style="text-align: justify;">
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Binary_search">Binary search</a> jest skuteczną metodą, która wykorzystuje strategię dziel i zwyciężaj do szybkiego znalezienia elementu na uporządkowanej liście, znacznie zmniejszając przestrzeń wyszukiwania o połowę w każdym kroku. Technika ta jest nie tylko przykładem skuteczności algorytmów w rozwiązywaniu problemów wyszukiwania, ale także podkreśla znaczenie zrozumienia podstawowych pojęć informatyki, takich jak algorytmy dziel i zwyciężaj, które są kluczowe dla optymalizacji i rozwiązywania złożonych problemów w bardziej intuicyjny sposób.
+</p>
+
+<p style="text-align: justify;">
+    Celem tego ćwiczenia jest zaimplementowanie wyszukiwania binarnego w taki sposób, aby zwracało indeks szukanego elementu na liście (lub -1, jeśli go nie ma) oraz liczbę wykonanych kroków, zapewniając jasny obraz procesu dziel i zwyciężaj w działaniu. Na poniższym obrazku znajdą Państwo ilustrację działania algorytmu. W przypadku parzystej liczby elementów na liście, lewy element jest traktowany jako element środkowy.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}bin-search.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Wejście:</strong> Dwa argumenty. {% if is_js %}Array{% else %}List{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> liczb całkowitych <span>({% if is_js %}number{% else %}int{% endif %})</span> i liczba całkowita.
+</p>
+
+<p>
+   <strong>Dane wyjściowe:</strong> {% if is_js %}Tablica{% else %}Lista{% endif %} dwóch {% if is_js %}liczb{% else %}całkowitych{% endif %}.
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
